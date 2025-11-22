@@ -27,4 +27,4 @@ def verify():
 
 
 def get_line_ids():
-    return [line["name"] for mode in MODES for line in tfl_get(f"/Line/Mode/{mode}")]
+    return [line["id"] for mode in MODES for line in tfl_get(f"/Line/Mode/{mode}")]
