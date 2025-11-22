@@ -14,3 +14,19 @@ def get_client():
     )
     return Client(token)
 
+
+def get_line_ids():
+    return [
+        'victoria',
+        'central',
+        'northern',
+        'bakerloo',
+        'piccadilly',
+        'dlr',
+        'metropolitan',
+        'jubilee',
+        'circle',
+        'district'
+        # 'hammersmith & city'
+        # 'waterloo & city',
+    ]
