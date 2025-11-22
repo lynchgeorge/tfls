@@ -14,6 +14,14 @@ class Station:
     def __repr__(self):
         return self.__str__()
 
+    def is_station(self, station_name):
+        '''
+        Evaluates to true if the provided
+        station name is a subset of the station's
+        name attribute.
+        '''
+        return station_name in self.name
+
 
 def stoppoint_to_station(stop_point, line_id):
     '''
@@ -32,4 +40,3 @@ def get_stations_on_line(client, line_id):
     stations_on_line = client.get_stop_points_by_line_id(line_id)
     return [stoppoint_to_station(stop_point, line_id)
             for stop_point in stations_on_line]
-
