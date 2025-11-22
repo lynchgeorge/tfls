@@ -5,7 +5,7 @@ import re
 
 setup(
     name='tfl',
-    version='v0.1',
+    version='v0.2',
     description="A layer ontop of the TFL Unified API",
     long_description=open("README.md").read() if os.path.exists("README.md") else "",
     long_description_content_type="text/markdown",
