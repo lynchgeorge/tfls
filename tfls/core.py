@@ -1,7 +1,4 @@
-from tfl.client import Client
-from tfl.api_token import ApiToken
 import os
-
 
 def verify():
     return 'tfls is working!'
